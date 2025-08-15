@@ -16,6 +16,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "graphql": "^16.11.0",
     "graphql-ws": "^6.0.6",
+    "lucide-react": "^0.539.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.8.0",
