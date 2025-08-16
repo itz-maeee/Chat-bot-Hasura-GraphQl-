@@ -33,7 +33,7 @@ function App() {
           </div>
         ) : (
           <Routes>
-            <Route path="/" element={<Navigate to= "/signin" />}/>
+            <Route path="/" element={<Navigate to="/signin" />}/>
 
             <Route
               path="/chatbot"
