@@ -33,7 +33,7 @@ function App() {
           </div>
         ) : (
           <Routes>
-            <Route path="/" element={<Navigate to={session ? "/chatbot" : "/signin"} replace />} />
+            <Route path="/" element={<Navigate to= "/signin" />}/>
 
             <Route
               path="/chatbot"
@@ -47,7 +47,7 @@ function App() {
 
             <Route
               path="/signup"
-              element={!session ? <SignUp /> : <Navigate to="/chatbot" replace />}
+              element={!session ? <SignUp /> : <Navigate to="/signin" replace />}
             />
 
             <Route path="*" element={<Navigate to="/" replace />} />

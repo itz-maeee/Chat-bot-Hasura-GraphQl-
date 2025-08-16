@@ -6,6 +6,7 @@ import { SEND_MESSAGE_ACTION } from "../queries"; // Hasura Action that calls n8
 export default function SendMessage({ chatId }) {
   const [text, setText] = useState("");
 
+
   const send = async () => {
     if (!text.trim() || !chatId) return;
 

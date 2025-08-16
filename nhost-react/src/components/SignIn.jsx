@@ -15,15 +15,18 @@ const SignIn = () => {
   }
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
+  e.preventDefault()
+  console.log("Attempting sign in with:", formData)
 
-    
-    const { session, error: authError } = await signIn(formData)
-    
-    if (session) {
-      navigate('/chatbot')
-    }
+  const { session, error: authError } = await signIn(formData)
+
+  console.log("Session:", session)
+  console.log("Auth Error:", authError)
+
+  if (session) {
+    navigate('/chatbot')
   }
+}
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-white to-blue-50 p-4">
